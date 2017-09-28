@@ -22,3 +22,13 @@ function TennisApp(){
     playerBScore++
   }
 }
+describe('When Player A get score',() => {
+  it('should echo "Love - Love" When game start',() => {
+    let app = new TennisApp()
+    app.reset()
+
+    let result = app.echo()
+
+    expect(result).toBe("Love - Love")
+  })
+})
