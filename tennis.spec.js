@@ -31,4 +31,15 @@ describe('When Player A get score',() => {
 
     expect(result).toBe("Love - Love")
   })
+
+  it('should echo "Fifteen - Love" When player A get frist score',() =>{
+    let app = new TennisApp()
+    app.reset()
+    app.playerAGetScore()
+
+    let result = app.echo()
+
+    expect(result).toBe("Fifteen - Love")
+  })
+
 })
